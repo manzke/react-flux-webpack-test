@@ -11,13 +11,15 @@ class MediaActions {
 
     search(searchTerm) {
         console.log('search.(..) - '+searchTerm);
-        superagent.get("https://itunes.apple.com/search?term="+searchTerm+"&entity=song&limit=25")
-            .use(jsonp)
-            .send()
-            .end((error, response) => {
-                console.log(response.body);
-                this.actions.searchSuccess(response.body.results)
-            });
+        if(searchTerm.length > 2) {
+            superagent.get("https://itunes.apple.com/search?term="+searchTerm+"&entity=song&limit=25")
+                .use(jsonp)
+                .send()
+                .end((error, response) => {
+                    console.log(response.body);
+                    this.actions.searchSuccess(response.body.results)
+                });
+        }
     }
 }
 

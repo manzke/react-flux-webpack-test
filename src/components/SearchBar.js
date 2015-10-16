@@ -30,8 +30,9 @@ class SearchBar extends React.Component {
     }
 
     onChange = evt => {
-        this.setState({searchTerm: evt.target.value});
-        MediaActions.search(evt.target.value);
+        var value = evt.target.value;
+        this.setState({searchTerm: value});
+        MediaActions.search(value);
     }
 }
 
