@@ -9,4 +9,10 @@ how to get started
 
 ``` npm run watch ```
 
-inspired by ["Sample PhoneGap App with ReactJS"](http://devgirl.org/2015/09/22/sample-phonegap-app-with-reactjs/) 
+inspired by ["Sample PhoneGap App with ReactJS"](http://devgirl.org/2015/09/22/sample-phonegap-app-with-reactjs/)
+ 
+TODO
+
+[] Add Notifications (Info, Warning, Error)
+[] Make Result Size configurable
+[] Add Loading animation
