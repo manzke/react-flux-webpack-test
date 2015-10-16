@@ -13,6 +13,7 @@ inspired by ["Sample PhoneGap App with ReactJS"](http://devgirl.org/2015/09/22/s
  
 TODO
 
-[] Add Notifications (Info, Warning, Error)
-[] Make Result Size configurable
-[] Add Loading animation
+[] add Notifications (Info, Warning, Error)
+[] make Result Size configurable
+[] add Loading animation
+[] add github page auto-generated
