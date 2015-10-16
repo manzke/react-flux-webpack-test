@@ -1,3 +1,11 @@
-npm run watch
+This is a repo where I'm testing 
+- [flux / alt.js](http://alt.js.org)
+- [react.js](https://facebook.github.io/react)
+- [webpack](http://webpack.github.io)
+- [superagent](https://visionmedia.github.io/superagent)
+- and a lot of more 
 
-https://visionmedia.github.io/superagent/
+how to get started
+
+``` npm run watch ```
+
