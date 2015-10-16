@@ -1,0 +1,27 @@
+{
+  "name": "react-flux-webpack-test",
+  "scripts": {
+    "build": "webpack --progress --profile --colors",
+    "watch": "webpack-dev-server --hot --inline --progress --colors",
+    "test": "echo \"No unit tests and e2e tests yet\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "alt": "0.17.1",
+    "alt-notify": "^0.3.4",
+    "babel-runtime": "5.6.18",
+    "react": "0.13.3",
+    "react-intl": "^1.2.0",
+    "react-router": "0.13.3",
+    "superagent": "^1.4.0",
+    "touchstonejs": "^0.6.0"
+  },
+  "devDependencies": {
+    "babel-core": "5.6.18",
+    "babel-loader": "5.3.1",
+    "html-webpack-plugin": "1.6.0",
+    "webpack": "1.10.1",
+    "webpack-dev-server": "1.10.1",
+    "touchstonejs-tasks": "^0.2.5"
+  }
+}
