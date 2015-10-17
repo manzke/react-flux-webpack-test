@@ -8,10 +8,12 @@ class MediaStore {
     entity = 'song';
     limit = 25;
     items = [];
+    loading = false;
 
     @bind(actions.search)
     search(options) {
-        console.log('MediaStore.search(..)');
+        console.log('MediaStore.search(..) - '+ JSON.stringify(options));
+        this.loading = options.loading;
         this.searchTerm = options.searchTerm;
         this.entity = options.entity;
         this.limit = options.limit;
@@ -20,7 +22,8 @@ class MediaStore {
 
     @bind(actions.searchSuccess)
     searchSuccess(items) {
-        console.log(items);
+        console.log('MediaStore.searchSuccess(..) - '+ JSON.stringify(items));
+        this.loading = false;
         this.items = items;
     }
 }

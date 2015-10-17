@@ -1,2 +1,3 @@
-react-flux-webpack-test.iml
+*.iml
 node_modules
+*.log

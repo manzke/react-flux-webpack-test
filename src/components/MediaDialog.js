@@ -18,9 +18,21 @@ class MediaDialog extends React.Component {
         return Store.getState();
     }
 
+    renderLoading() {
+        console.log('renderLoading(..) - '+this.props.loading)
+        if (this.props.loading) {
+            return (
+                "Loading..."
+            )
+        } else {
+            return ""
+        }
+    }
+
     render() {
         return (
             <div>
+                { this.renderLoading() }
                 <h1>Count: {this.props.items.length}</h1>
                 {this.props.items.map((item, i) => {
                     return <MediaItem item={item}/>

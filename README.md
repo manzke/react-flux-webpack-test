@@ -17,5 +17,9 @@ TODO
 
 [] add Notifications (Info, Warning, Error)
 [] make Result Size configurable
-[] add Loading animation
+[x] add Loading "animation"
 [] add github page auto-generated
+
+Blogs
+[learn-es2015](https://babeljs.io/docs/learn-es2015/)
+["Sample PhoneGap App with ReactJS"](http://devgirl.org/2015/09/22/sample-phonegap-app-with-reactjs/)

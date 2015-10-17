@@ -10,8 +10,11 @@ class MediaActions {
     }
 
     search(searchTerm) {
+        let entity = 'song';
+        let loading = false;
         console.log('search.(..) - '+searchTerm);
         if(searchTerm.length > 2) {
+            loading = true;
             superagent.get("https://itunes.apple.com/search?term="+searchTerm+"&entity=song&limit=25")
                 .use(jsonp)
                 .send()
@@ -20,6 +23,7 @@ class MediaActions {
                     this.actions.searchSuccess(response.body.results)
                 });
         }
+        return { 'searchTerm':searchTerm, 'entity': entity, 'limit':25, 'loading': loading };
     }
 }
 
