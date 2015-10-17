@@ -8,7 +8,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <h1>Example</h1>
+                <h1>itunes search</h1>
                 <SearchBar/>
                 <MediaDialog/>
             </div>

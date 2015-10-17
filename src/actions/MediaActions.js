@@ -10,8 +10,8 @@ class MediaActions {
     }
 
     search(searchTerm) {
-        let entity = 'song';
-        let loading = false;
+        var entity = 'song';
+        var loading = false;
         console.log('search.(..) - '+searchTerm);
         if(searchTerm.length > 2) {
             loading = true;
