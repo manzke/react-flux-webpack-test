@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/8d443d7e1bbf44fda9634ae52fa01e64)](https://www.codacy.com/app/daniel-manzke/react-flux-webpack-test)
+
 This is a repo where I'm testing 
 - [flux / alt.js](http://alt.js.org)
 - [react.js](https://facebook.github.io/react)
