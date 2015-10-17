@@ -23,3 +23,4 @@ TODO
 Blogs
 [learn-es2015](https://babeljs.io/docs/learn-es2015/)
 ["Sample PhoneGap App with ReactJS"](http://devgirl.org/2015/09/22/sample-phonegap-app-with-reactjs/)
+[A CHANGING OF THE GUARD IN WEB TECHNOLOGY ](https://underthehood.myob.com/changing-of-the-guard-in-web-technologies/)
