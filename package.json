@@ -10,9 +10,11 @@
     "alt": "0.17.1",
     "alt-notify": "^0.3.4",
     "babel-runtime": "5.6.18",
-    "react": "0.13.3",
+    "history": "^1.12.5",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
     "react-intl": "^1.2.0",
-    "react-router": "0.13.3",
+    "react-router": "^1.0.0",
     "superagent": "^1.4.0",
     "superagent-jsonp": "0.0.6",
     "touchstonejs": "^0.6.0"
