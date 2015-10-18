@@ -1,8 +1,8 @@
 // Bootstrapping module
 import React from 'react';
+import {render} from 'react-dom';
 import Router from 'react-router';
+import createHashHistory from 'history/lib/createHashHistory';
 import routes from 'routes';
 
-Router.run(routes, Router.HistoryLocation, (Root, state) => {
-    React.render(<Root {...state}/>, document.getElementById('content'));
-});
+render((<Router routes={routes} history={createHashHistory()}/>), document.getElementById('content'));

@@ -1,7 +1,7 @@
 import React from 'react';
 import connectToStores from 'alt/utils/connectToStores';
-import MediaStore from 'stores/MediaStore';
-import MediaActions from 'actions/MediaActions';
+import SearchResultStore from 'stores/SearchResultStore';
+import SearchActions from 'actions/SearchActions';
 
 @connectToStores
 class SearchBar extends React.Component {
@@ -13,11 +13,11 @@ class SearchBar extends React.Component {
     }
 
     static getStores(props) {
-        return [MediaStore];
+        return [SearchResultStore];
     }
 
     static getPropsFromStores(props) {
-        return MediaStore.getState();
+        return SearchResultStore.getState();
     }
 
     render() {
@@ -30,9 +30,9 @@ class SearchBar extends React.Component {
     }
 
     onChange = evt => {
-        var value = evt.target.value;
+        let value = evt.target.value;
         this.setState({searchTerm: value});
-        MediaActions.search(value);
+        SearchActions.search(value);
     }
 }
 

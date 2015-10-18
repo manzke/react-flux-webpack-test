@@ -1,11 +1,13 @@
 import React from 'react';
 import connectToStores from 'alt/utils/connectToStores';
-import Store from 'stores/MediaStore';
-import Actions from 'actions/MediaActions';
-import MediaItem from 'components/MediaItem';
+import Store from 'stores/SearchResultStore';
+import Actions from 'actions/SearchActions';
+import Item from 'components/SearchResultItem';
+import Artist from 'models/Artist';
+import Track from 'models/Track';
 
 @connectToStores
-class MediaDialog extends React.Component {
+class SearchDialog extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -34,12 +36,14 @@ class MediaDialog extends React.Component {
             <div>
                 { this.renderLoading() }
                 <h1>Count: {this.props.items.length}</h1>
+                <ul>
                 {this.props.items.map((item, i) => {
-                    return <MediaItem key={i} item={item}/>
+                    return <Item key={i} track={new Track(item)} artist={new Artist(item)}/>
                 })}
+                </ul>
             </div>
         );
     }
 }
 
-export default MediaDialog;
+export default SearchDialog;
