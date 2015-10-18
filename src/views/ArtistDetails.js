@@ -1,10 +1,6 @@
 import React from 'react';
 
 class ArtistDetails extends React.Component {
-    constructor(props) {
-        super(props);
-        console.log('ArtistDetails View created');
-    }
     render() {
         return (
             <div>

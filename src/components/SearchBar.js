@@ -5,13 +5,6 @@ import SearchActions from 'actions/SearchActions';
 
 @connectToStores
 class SearchBar extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            searchTerm: props.searchTerm
-        }
-    }
-
     static getStores(props) {
         return [SearchResultStore];
     }
@@ -23,8 +16,8 @@ class SearchBar extends React.Component {
     render() {
         return (
             <div>
-                <input type="text" value={this.state.searchTerm} onChange={this.onChange}/>
-                <h1>Search: {this.state.searchTerm}</h1>
+                <input type="text" value={this.props.searchTerm} onChange={this.onChange}/>
+                <h1>Search: {this.props.searchTerm}</h1>
             </div>
         );
     }

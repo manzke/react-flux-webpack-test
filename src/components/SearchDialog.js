@@ -20,21 +20,9 @@ class SearchDialog extends React.Component {
         return Store.getState();
     }
 
-    renderLoading() {
-        console.log('renderLoading(..) - '+this.props.loading)
-        if (this.props.loading) {
-            return (
-                "Loading..."
-            )
-        } else {
-            return ""
-        }
-    }
-
     render() {
         return (
             <div>
-                { this.renderLoading() }
                 <h1>Count: {this.props.items.length}</h1>
                 <ul>
                 {this.props.items.map((item, i) => {
