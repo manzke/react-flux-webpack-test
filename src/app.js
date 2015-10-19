@@ -18,8 +18,10 @@ class App extends React.Component {
         let { location } = this.props;
         console.log('backButton(..) - '+JSON.stringify(location));
         if(location.pathname !== '/') {
-            console.log('backButton(..) - not route');
             return (<IndexLink to="/">Home</IndexLink>);
+            console.log('backButton(..) - not route');
+        } else {
+            return 'Home';
         }
     }
 
